@@ -1,0 +1,9 @@
+📝 documentation:
+  - "**/*.md"
+  - "*.md"
+
+🐳 docker:
+  - "Dockerfile"
+
+⚙ ci:
+  - ".github/**"
