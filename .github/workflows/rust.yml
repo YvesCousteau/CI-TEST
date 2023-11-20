@@ -11,7 +11,7 @@ env:
 
 jobs:
   lint:
-    name: Lint
+    name: Lint Project
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -31,7 +31,7 @@ jobs:
         run: cargo verify-project
       - name: Check sources for formating errors
         run: cargo fmt --check
-        
+
   build:
     name: Build project
     runs-on: ubuntu-latest
@@ -51,7 +51,7 @@ jobs:
       run: cargo build --verbose
 
   unittests:
-    name: Build and Run unittests
+    name: Build and Run project unittests
     runs-on: ubuntu-latest
     defaults:
       run:
