@@ -12,11 +12,5 @@ jobs:
       - name: Like pizza
         uses: actions/github-script@v4
         with:
-          script: |
-            const {owner, repo} = context.issue
-            github.reactions.createForIssueComment({
-              owner,
-              repo,
-              comment_id: context.payload.comment.id,
-              content: "+1",
-            });         
+          result-encoding: string
+          script: return "I will be string (not JSON) encoded!"
