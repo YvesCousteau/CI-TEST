@@ -1,3 +1,9 @@
-# Add 'label-rust-test' to any changes within 'rust-test' folder or any subfolders
-label-rust-test:
-- rust-test/**
+📝 documentation:
+  - "**/*.md"
+  - "*.md"
+
+🐳 docker:
+  - "Dockerfile"
+
+⚙ ci:
+  - ".github/**"
